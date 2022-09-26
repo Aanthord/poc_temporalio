@@ -4,7 +4,7 @@ import (
 	"go.temporal.io/sdk/workflow"
 )
 
-func SampleChildWorkflow(ctx workflow.Context, name string) (string, error) {
+func ChildWorkflow(ctx workflow.Context, name string) (string, error) {
 	logger := workflow.GetLogger(ctx)
 	greeting := "Hello " + name + "!"
 	logger.Info("Child workflow execution: " + greeting)
