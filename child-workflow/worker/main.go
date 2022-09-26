@@ -56,8 +56,8 @@ func main() {
 
 	w := worker.New(c, "child-workflow", worker.Options{})
 
-	w.RegisterWorkflow(child_workflow.SampleParentWorkflow)
-	w.RegisterWorkflow(child_workflow.SampleChildWorkflow)
+	w.RegisterWorkflow(child_workflow.ParentWorkflow)
+	w.RegisterWorkflow(child_workflow.ChildWorkflow)
 
 	err = w.Run(worker.InterruptCh())
 	if err != nil {
