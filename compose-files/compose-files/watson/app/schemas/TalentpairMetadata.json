@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "id": "TalentpairMetadata",
+    "title": "Talentpair Token Metadata extension",
+    "type": "object",
+    "description": "Base metadata for all talentpair NFT's",
+    "properties": {
+        "hash": {
+            "type": "string"
+        },
+        "metadata_erc_721": { "$ref": "MetadataErc721" }
+    },
+    "required": ["hash", "metadata_ecr_721"]
+}

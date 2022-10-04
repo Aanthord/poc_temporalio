@@ -1,0 +1,1 @@
+export const abstractError = (msg: string | undefined = undefined) => {throw new Error(msg || "Abstract classes cannot be instantiated.");};

@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "id": "MetadataErc721",
+    "title": "Asset Metadata",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Identifies the asset to which this token represents"
+        },
+        "symbol": {
+            "type": "string",
+            "description": "Describes the asset to which this token represents",
+            "required": false
+        },
+        "token_uri": {
+            "type": "string",
+            "format": "uri",
+            "description": "A URI pointing to a resource with mime type image/* representing the asset to which this token represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive.  Conditionally Optional.",
+            "required": false
+        },
+        "external_uri": {
+            "type": "string",
+            "format": "uri",
+            "description": "A URI pointing to an externally hosted resources.",
+            "required": false
+        }
+    }
+}
