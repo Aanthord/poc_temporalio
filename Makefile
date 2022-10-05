@@ -1,4 +1,4 @@
-all: one two three
+all: kafka telemetry coston airbyte watson
 
 kafka:
 	docker-compose -f ./compose-files/kafka-stack-docker-compose/full-stack.yml
